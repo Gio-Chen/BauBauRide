@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <script src="../static/js/jquery.min.js"></script> 
+    <script src="../static/js/bootstrap.min.js"></script>
+    
+
+    <title>BauBauRide</title>
+  </head>
+
+  <body>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--Barra Menù-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid miodiv">
+            <div class="navbar-brand" href="#"><h1>BauBauRide</h1></div>
+            <button class="navbar-toggler" type="button" data-base-toggle="collapse" data-bs-target="navbarCollapse" aria-controls="navbarCollapse" arial-expanded="false" arial-label="Toggle navigation">
+                <spam class="navbar-toggler-collapse" id="navbarCollapse"></spam>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#accedi_address">Accedi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#accedi_address">Registrati</a>
+                    </li>
+
+                    <!--Popup di assistenza-->
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#accedi_address">Assistenza</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="#indirizzo_address">Dove ci troviamo?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Modal-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Assistenza</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <spam class="nota1">
+                    <label for="story">Nota:</label>
+                </spam>
+                <p class="nota">
+                    <textarea id="nota" name="nota" rows="5" cols="50"></textarea>
+                </p>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                <button type="button" class="btn btn-primary">Invia</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Funzione carousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/ka.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Amici quattro zampe</h5>
+            <spam class="text">
+                <p>Ogni giorno cerchiamo di divertirci con i nostri amici quattro zampe</p>
+            </spam>
+            <a href="#accedi_address" class="btn btn-lg btn-primary">
+                Accedi
+            </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/s.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>All'aperto!</h5>
+            <spam class="text2">
+                <p>Cerchiamo di divertirci sempre all'aperto, così i nostri amici corrono e saltano</p>
+            </spam>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/sb.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Accompagnatori</h5>
+            <spam class="text3">
+                <p>Abbiamo dei Accompagantori molto esperti</p>
+            </spam>
+            <a href="#prenota_address" class="btn btn-lg btn-primary">
+                Prenota
+            </a>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Spazio vuoto-->
+
+    <hr class="divisore">
+
+    <!--Div testo-->
+
+    <div class="container-lg miodiv2">
+        <div class="row">
+            <div class="col-7">
+                <h2 class="title1">
+                    Chi siamo? E cosa facciamo?
+                </h2>
+                <p class="t1">Siamo Dog sitting conosciuto anche Pet sitting, assistente del cane e assistente, è un servizio che viene offerto tramite un determinato corrispettivo per la cura e l'assistenza di un animale da compagnia, durante l'assenza del suo proprietario.</p>
+            </div>
+
+            <div class="col-5">
+                <img class="imgc1" src="images/ws.jpg" width="500" height="400">
+            </div>
+
+            <p id="prenota_address"></p>
+        </div>
+    </div>
+
+    <!--Spazio vuoto-->
+
+    <hr class="divisore">
+
+    <!--Div PET sitter-->
+
+    <div class="container-lg miodiv3">
+        <div class="row row1">
+            <h2 class="title2">Pet Sitter</h2>
+        </div>
+
+        <hr class="divisore1">
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds1.jpg" width="140px" height="140px">
+                <h3 class="NPS">Anna</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds2.jpg" width="140px" height="140px">
+                <h3 class="NPS">Paolo</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds3.jpg" width="140px" height="140px">
+                <h3 class="NPS">Laura</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds4.jpg" width="140px" height="140px">
+                <h3 class="NPS">Chiara</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds5.jpg" width="140px" height="140px">
+                <h3 class="NPS">Kevin</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/ds6.jpg" width="140px" height="140px">
+                <h3 class="NPS">Francesca</h3>
+                <spam class="bottone2">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Prenota
+                    </a>
+                </spam>
+            </div>
+        </div>
+
+        <div class="row row3">
+            <spam class="bottone2">
+                <a href="#" class="btn btn-lg btn-primary">
+                Scopri altri
+                </a>
+            </spam>
+        </div>
+    </div>
+
+    <!--Spazio vuoto-->
+
+    <hr class="divisore">
+
+    <!--Div Prodotti-->
+
+    <div class="container-lg miodiv4">
+        <div class="row row4">
+            <h2 class="title3">
+                Prodotti
+            </h2>
+        </div>
+
+        <hr class="divisore1">
+
+        <div class="row">
+            <div class="col-4">
+                <img class="PetGaget" src="images/cibo.jpg" width="300" heigth="300">
+                <h3 class="cga">Cibo</h3>
+                <spam class="bottone2">
+                    <a href="cibo.html" class="btn btn-lg btn-primary">
+                    Scopri di più
+                    </a>
+                </spam>
+            </div>
+
+            <div class="col-4">
+                <img class="PetGaget" src="images/giocattoli.jpg" width="300" heigth="300">
+                <h3 class="cga">Giocattoli</h3>
+                <spam class="bottone2">
+                    <a href="giocattoli.html" class="btn btn-lg btn-primary">
+                    Scopri di più
+                    </a>
+                </spam>
+            </div>
+
+            <div class="col-4">
+                <img class="PetGaget" src="images/abbigliamento.jpg" width="300" heigth="300">
+                <h3 class="cga">Abbigliamenti</h3>
+                <spam class="bottone2">
+                    <a href="abbigliamenti.html" class="btn btn-lg btn-primary">
+                    Scopri di più
+                    </a>
+                </spam>
+            </div>
+        </div>
+    </div>
+
+    <!--Cibo-->
+
+    <div class="container-lg miodiv5">
+        <div class="row row1">
+            <h2 class="title3">Cibo</h2>
+        </div>
+
+        <hr class="divisore1">
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Cibo/1.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Cibo/2.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Cibo/3.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Cibo/4.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <h3 class="NPS">In arrivo...</h3>
+                </spam>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Giocattoli-->
+
+    <div class="container-lg miodiv6">
+        <div class="row row1">
+            <h2 class="title3">Giocattoli</h2>
+        </div>
+
+        <hr class="divisore1">
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Giocattoli/1.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Giocattoli/2.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Giocattoli/3.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Giocattoli/4.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <h3 class="NPS">In arrivo...</h3>
+                </spam>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Abbigliamenti-->
+
+    <div class="container-lg miodiv7">
+        <div class="row row1">
+            <h2 class="title3">Abbigliamenti</h2>
+        </div>
+
+        <hr class="divisore1">
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Abbigliamenti/1.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Abbigliamenti/2.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <img class="PetSitter" src="images/Abbigliamenti/3.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+        </div>
+
+        <div class="row row2">
+            <div class="col-4">
+                <img class="PetSitter" src="images/Abbigliamenti/4.jpg" width="140px" height="140px">
+                <spam class="bottone3">
+                    <a href="#" class="btn btn-lg btn-primary">
+                    Acquista
+                    </a>
+                </spam>
+                
+            </div>
+
+            <div class="col-4">
+                <h3 class="NPS">In arrivo...</h3>
+                </spam>
+            </div>
+
+        </div>
+
+        <p id="accedi_address"></p>
+    </div>
+
+    <!--Spazio vuoto-->
+
+    <hr class="divisore">    
+    
+    <!--Login-->
+
+    <div class="container miodiv8">
+        <div class="row">
+
+            <div class="col-6 access">
+                <h3 class="title4">
+                    Accedi!
+                </h3>
+                <form>
+                    <div>
+                        <label for="fname">Email</label>
+                        <input type="text" id="fname">
+                    </div> 
+                    
+                    <div>
+                        <label for="fname">Password</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <spam class="link1">
+                        <p><a href="#">password dimenticata?</a></p>
+                        <p><a href="#registrati_address">Non hai un account?</a></p>
+                    </spam>
+                    
+                </form>
+                <spam class="bottone1">
+                    <button type="button" class="btn btn-danger">accedi</button>
+                </spam>
+            </div>
+        
+
+                <div class="col-6">
+                    <h3 class="title4" id="registrati_address">
+                        Registrati!
+                    </h3>
+                    <form>
+                        <div>
+                            <label for="fname">Nome</label>
+                            <input type="text" id="fname">
+                        </div> 
+                        
+                        <div>
+                            <label for="fname">Cognome</label>
+                            <input type="text" id="fname">
+                        </div>
+
+                        <div>
+                            <label for="fname">Email</label>
+                            <input type="text" id="fname">
+                        </div>
+
+                        <div>
+                            <label for="fname">Password</label>
+                            <input type="text" id="fname">
+                        </div>
+
+                        <div>
+                            <label for="fname">Conferma Password</label>
+                            <input type="text" id="fname">
+                        </div>
+                        
+                    </form>
+
+                    <spam class="bottone1">
+                        <button type="button" class="btn btn-success">Registrati</button>
+                    </spam>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Spazio vuoto-->
+
+    <hr class="divisore">
+
+    <!--Prenotazione-->
+
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+
+    <!--Div Finale-->
+
+    <div class="container-fluid divfinale" id="indirizzo_address">
+        <div class="row rowspace">
+
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <spam class="textfinale1">
+                <p>
+                    BauBau Ride S.r.l.
+                </p>
+                <p>
+                    via Lungomare Azzurro, 115
+                </p>
+                <p>
+                    Jesolo (VE)
+                </p>
+                <p>
+                    tel. 0421 443 4433
+                </p>
+                <p>
+                    email: info@baubauride.com
+                </p>
+                <p>
+                    sito: www.baubauride.com
+                </p>
+            </spam>
+            </div>
+            <div class="col-4 link">
+                <h5>Servizi</h5>
+                <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#accedi_address">Assistenza</a>
+                <a class="nav-link active" aria-current="page" href="#accedi_address">Accedi</a>
+                <a class="nav-link active" aria-current="page" href="#accedi_address">Registrati</a>
+            </div>
+
+            <div class="col-4 tf">
+                <h5>Social</h5>
+                <p>
+                    <a href="" target="_blank">
+                        <img src="images/Social/facebook.png" width="35" height="35">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="images/Social/twitter.png" width="35" height="35">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="images/Social/instagram.png" width="35" height="35">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="images/Social/youtube.png" width="35" height="35">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

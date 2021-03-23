@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@300&display=swap');
+
+.text
+{
+    color: black;
+
+}
+
+.nota
+{
+    padding-left: 30px;
+}
+
+.nota1 
+{
+    padding-left: 30px;
+}
+
+.miodiv2
+{
+    background-color: rgb(255, 193, 58);
+    height: 400px;
+}
+
+.text3
+{
+    color: greenyellow;
+}
+
+.title1
+{
+    color: black;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top:3rem;
+    font-size: 3rem;
+    font-family: 'Exo', sans-serif;
+}
+
+.t1
+{
+    color: black;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1
+{
+    font-family: 'Dancing Script', cursive;
+    color: yellowgreen;
+    padding-left: 50px;
+}
+
+.bottone
+{
+    padding: 5px;
+}
+
+.carousel-item
+{
+    height:32rem;
+}
+
+.divisore
+{
+    margin: 3rem 0;
+}
+
+.imgc1
+{
+    padding: 1rem;
+}
+
+.miodiv3
+{
+    background-color: rgb(77, 77, 77);
+}
+
+.PetSitter
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+.NPS
+{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bottone2
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+.row1
+{
+    padding-top: 50px;
+}
+
+.row2
+{
+    padding: 50px;
+}
+
+.row3
+{
+    padding: 5px;
+}
+
+.title2
+{
+    padding: 5px;
+    text-align: center;
+    color: greenyellow;
+    font-family: 'Exo', sans-serif;
+}
+
+.divisore1
+{
+    color: greenyellow;
+}
+
+.PetGaget
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+.title3
+{
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-family: 'Exo', sans-serif;
+}
+
+.miodiv5
+{
+    background-color: rgb(255, 72, 0);
+}
+
+.miodiv6
+{
+    background-color: rgb(255, 36, 237);
+}
+
+.miodiv7
+{
+    background-color: rgb(255, 217, 0);
+}
+.cga
+{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bottone3
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    padding: 30px;
+}
+
+.miodiv4
+{
+    background-color: rgb(0, 175, 219);
+    height: 530px;
+}
+
+.rowspace
+{
+    height: 20px;
+    background-color: rgb(0, 175, 0);
+}
+
+
+
+.divfinale
+{
+    background-color: rgb(0, 175, 0);
+}
+
+.textfinale1
+{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link
+{
+    text-align: center;
+    color: black;
+}
+
+.tf
+{
+    font-size: 1.2rem;
+}
+
+.title4
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.caselle
+{
+    padding-top: 30px;
+}
+
+.caselle1
+{
+    padding-top: 30px;
+}
+
+form
+{
+    display: table;
+    margin: 0 auto;
+}
+
+form div
+{
+    display:table-row;  
+}
+
+form label
+{
+    width:150px;
+    text-align: right;
+    padding: 15px;
+}
+
+.accedi
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+.bottone1 
+{
+    display:block;
+    margin:0px auto;
+    text-align:center;
+}
+
+.link1
+{
+    width:150px;
+    text-align: right;
+    padding: 15px;
+}
+
+
